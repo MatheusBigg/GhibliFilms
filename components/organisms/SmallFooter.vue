@@ -7,16 +7,8 @@
   </footer>
 </template>
 
-<script lang="ts">
-import { computed, defineComponent } from 'vue';
-
-export default defineComponent({
-  data() {
-    return {
-      currentYear: computed(() => new Date().getFullYear()),
-    }
-}
-})
+<script setup lang="ts">
+const currentYear = computed(() => new Date().getFullYear());
 </script>
 
 <style lang="scss" scoped>

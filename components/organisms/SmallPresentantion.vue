@@ -5,11 +5,8 @@
     </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-
-    props: {
+<script setup lang="ts">
+const props = defineProps({
         text: {
             type: String,
             required: true
@@ -18,7 +15,6 @@ export default defineComponent({
             type: String,
             required: true
         }
-    },
 //     computed: {
 //     resolvedImgPath() {
 //       return require(`@/assets/${this.img_path}`);

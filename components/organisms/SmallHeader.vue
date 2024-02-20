@@ -1,5 +1,4 @@
 <template>
-  <div>
     <header class="header">
         <nav>
             <ul class="items">
@@ -20,7 +19,6 @@
             </ul>
         </nav>
     </header>
-  </div>
 </template>
 
 <style lang="scss" scoped>

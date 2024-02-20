@@ -1,7 +1,7 @@
 <template>
     <div class="about-template">
         <AtomsPageTitle text="About " strong="Studio Ghibli"/>
-        <OrganismsSmallPresentantion text="About Studio Ghibli" img_path="statue.png"/>
+        <OrganismsSmallPresentantion text="About Studio Ghibli" img_path="@/assets/statue.png"/>
     </div>
 </template>
 

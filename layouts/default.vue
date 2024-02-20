@@ -2,7 +2,9 @@
   <div class="film-layout">
     <OrganismsSmallHeader />
     <BosonsConteudoContainer class="container" >
-        <slot />
+      <div>
+      <slot />
+    </div>
     </BosonsConteudoContainer>
     <OrganismsSmallFooter class="footer"/>
   </div>

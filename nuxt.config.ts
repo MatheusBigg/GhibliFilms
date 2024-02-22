@@ -7,6 +7,7 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+
   app: {
     head: {
       title: 'Ghibli Films',
@@ -22,5 +23,7 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
+
   css: ['@/assets/scss/base.scss'],
+  modules: ["@nuxt/image"]
 })

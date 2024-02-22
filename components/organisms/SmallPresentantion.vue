@@ -1,11 +1,16 @@
 <template>
     <div class="presentation">
         <p> {{ text }} </p>
-        <img :src="img_path" alt="presentation" class="img-presentation">
+        <img :src="img_path" alt="presentation" class="img-presentation" /> 
+        <!-- require(`${img_path}`) -->
+        <button @click="showImgPath">Ver caminho da imagem</button>
     </div>
 </template>
 
 <script setup lang="ts">
+const showImgPath = () => {
+      console.log(`Caminho da imagem: ${props.img_path}`);
+    }
 const props = defineProps({
         text: {
             type: String,
@@ -14,20 +19,7 @@ const props = defineProps({
         img_path: {
             type: String,
             required: true
-        }
-//     computed: {
-//     resolvedImgPath() {
-//       return require(`@/assets/${this.img_path}`);
-//     }
-//   },
-//     methods: {
-//         logImgPath() {
-//             console.log(this.img_path)
-//         }
-//     },
-//     created () {
-//         this.logImgPath()
-//     }
+        },
 })
 </script>
 

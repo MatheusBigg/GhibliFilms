@@ -5,6 +5,10 @@
     </div>
 </template>
 
+<script setup lang="ts">
+
+</script>
+
 <style lang="scss" scoped>
 .characters-template {
   display: grid;

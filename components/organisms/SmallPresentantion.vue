@@ -1,6 +1,6 @@
 <template>
     <div class="presentation">
-        <p> {{ text }} </p>
+        <p><b> {{ text }} </b></p>
         <img :src="img_path" alt="presentation" class="img-presentation" /> 
         <!-- require(`${img_path}`) -->
         <button @click="showImgPath">Ver caminho da imagem</button>

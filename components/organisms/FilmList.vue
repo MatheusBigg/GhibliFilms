@@ -16,7 +16,7 @@ const {data: allFilms } = await useFetch<Film[]>("https://ghibliapi.vercel.app/f
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(7, 1fr);
-  max-height: 600px; /* Adjust based on your needs */
+  //max-height: 600px; /* Adjust based on your needs */
   overflow-y: auto; /* Enable scrolling if necessary */
 }
 .h2 {

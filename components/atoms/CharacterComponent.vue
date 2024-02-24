@@ -1,40 +1,38 @@
 <template>
-    <NuxtLink :to="`/characters/${Chara.id}`" >
-      <div class="character-wrapper">
-        <h4>{{ Chara.name }}</h4>
-        <div class="character-item-wrapper">
-            <div class="character-item"></div>
-          <!-- <img :src="Chara.image" :alt="Chara.title" class="character-item"/> -->
-          <div class="character-details">
-            <div>{{ Chara.gender }}</div>
-            <div>{{ Chara.age }}</div>
-            <br>
-            <div><i>{{ Chara.species }}</i></div>
-          </div>
+  <NuxtLink :to="`/characters/${Chara.id}`" >
+    <div class="character-wrapper">
+      <h4>{{ Chara.name }}</h4>
+      <div class="character-item-wrapper">
+        <!-- <div class="character-item"></div> -->
+        <img :src="Chara.image_path" :alt="Chara.name" class="character-item"/>
+        <div class="character-details">
+          <div>{{ Chara.gender }}</div>
+          <div>{{ Chara.age }}</div>
+          <br>
+          <div><i>{{ Chara.species }}</i></div>
         </div>
       </div>
-    </NuxtLink>
-  </template>
+    </div>
+  </NuxtLink>
+</template>
     
-  <script setup lang="ts">
+<script setup lang="ts">
   const props = defineProps ({
     Chara: {
       type: Object as PropType<Person>, //this line can be removed but some types mighty not be enforced
       required: true,
     },
   });
-  </script>
+</script>
   
-  <style lang="scss" scoped>
+<style lang="scss" scoped>
   .character-wrapper {
     position: relative;
     margin-bottom: 20px; /* Adjust as needed */
   }
-  
   .character-item-wrapper {
     position: relative;
   }
-  
   .character-item {
     width: 150px;
     height: 200px;
@@ -42,7 +40,6 @@
     object-fit: cover;
     position: relative;
   }
-  
   .character-details {
     opacity: 0;
     visibility: hidden;
@@ -59,9 +56,8 @@
     border-radius: 7px; /* Add border-radius as needed */
     z-index: 1; /* Ensure the details appear above the image */
   }
-  
   .character-item-wrapper:hover .character-details {
     opacity: 1;
     visibility: visible;
   }
-  </style>
+</style>

@@ -1,8 +1,8 @@
 <template>
     <div class="characters-template">
         <AtomsPageTitle text="Characters of " strong="Studio Ghibli"/>
-        <OrganismsSmallPresentantion text="All Characters" img_path="@/assets/ghibli-characters.png"/>
         <OrganismsCharactersList />
+        <OrganismsSmallPresentantion text="Wallpaper of Studio Ghibli" img_path="@/assets/ghibli-characters.png"/>
     </div>
 </template>
 

@@ -8,6 +8,7 @@ declare interface Person {
     films: Film[]; 
     species: string;
     url: string;
+    image_path?: string; //will be inserted
 }
 
 declare interface Species {

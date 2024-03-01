@@ -32,7 +32,11 @@
   }
   .character-item-wrapper {
     position: relative;
+    img {
+    border-radius: 50%;
+    }
   }
+  
   .character-item {
     width: 150px;
     height: 200px;

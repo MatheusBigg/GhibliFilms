@@ -8,8 +8,8 @@
         <div class="character-details">
           <div>{{ Chara.gender }}</div>
           <div>{{ Chara.age }}</div>
-          <br>
-          <div><i>{{ Chara.species }}</i></div>
+          <!-- <br> -->
+          <!-- <div><i>{{ Chara.species }}</i></div> -->
         </div>
       </div>
     </div>

@@ -10,4 +10,11 @@
   display: grid;
   grid-gap: 4rem;
 }
+
+/* Styles for narrower screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .about-template {
+    grid-gap: 1rem;
+  }
+}
 </style>

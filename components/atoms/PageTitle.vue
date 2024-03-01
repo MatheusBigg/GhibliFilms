@@ -27,4 +27,12 @@ const props = defineProps({
   }
 }
 
+/* Styles for narrower screens (e.g., mobile) */
+@media (max-width: 768px) {
+    .page-title {
+        text-align: center;
+        font-size: 90%;
+    }
+}
+
 </style>

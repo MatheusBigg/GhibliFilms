@@ -1,6 +1,6 @@
 <template>
   <div class="characters">
-    <button @click="showCharacters">Ver todos</button>
+    <!-- <button @click="showCharacters">Ver todos</button> -->
     <AtomsCharacterComponent v-for="chara in sortedCharacters" :key="chara.id" :Chara="chara"/>
   </div>
 </template>
@@ -18,7 +18,11 @@
     if (allCharacters.value) {
       // Insert the image key and its paths
       return toRaw(allCharacters.value).map((person) => {
-      person.image_path = `~/public/characters/${person.name}.jpg`;
+        if (person.name === "Kanta Ōgaki") {
+          person.image_path = "characters/Kanta Ogaki.jpg";
+        } else {
+          person.image_path = `characters/${person.name}.jpg`;
+        }
       return person;
     });
     } else {
@@ -42,11 +46,19 @@
     grid-gap: 1rem;
     grid-template-columns: repeat(7, 1fr);
     //max-height: 600px; /* Adjust based on your needs */
-    overflow-y: auto; /* Enable scrolling if necessary */
+    //overflow-y: auto; /* Enable scrolling if necessary */
   }
-  .h2 {
-      font-size: 1.375rem;
-      font-weight: 500;
-      color: rgba($color: #292929, $alpha: 1.0);
+  // .h2 {
+  //     font-size: 1.375rem;
+  //     font-weight: 500;
+  //     color: rgba($color: #292929, $alpha: 1.0);
+  // }
+
+  /* Styles for narrower screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .characters {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-gap: 3rem;
   }
+}
 </style>

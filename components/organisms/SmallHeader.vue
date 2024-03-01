@@ -61,4 +61,21 @@
   }
 }
 
+/* Styles for narrower screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .header {
+    display: block; /* Important for margin: auto to work horizontally */
+    width: 90%;  /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto;
+    nav {
+      width: 100%;
+      gap: 10px;
+      .items {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 </style>

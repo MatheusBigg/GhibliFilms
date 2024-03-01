@@ -17,11 +17,19 @@ const {data: allFilms } = await useFetch<Film[]>("https://ghibliapi.vercel.app/f
   grid-gap: 1rem;
   grid-template-columns: repeat(7, 1fr);
   //max-height: 600px; /* Adjust based on your needs */
-  overflow-y: auto; /* Enable scrolling if necessary */
+  //overflow-y: auto; /* Enable scrolling if necessary */
 }
 .h2 {
     font-size: 1.375rem;
     font-weight: 500;
     color: rgba($color: #292929, $alpha: 1.0);
+}
+
+/* Styles for narrower screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .releases {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-gap: 3rem;
+  }
 }
 </style>

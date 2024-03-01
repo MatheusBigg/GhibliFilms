@@ -5,8 +5,8 @@
       <div class="film-item-wrapper">
         <img :src="Film.image" :alt="Film.title" class="film-item"/>
         <div class="film-details">
-          <div>{{ Film.description }}</div>
-          <br>
+          <!-- <div>{{ Film.description }}</div>
+          <br> -->
           <div><i>{{ Film.release_date }}</i></div>
           <div><b>{{ Film.director }}</b></div>
           <div><b>{{ Film.producer }}</b></div>

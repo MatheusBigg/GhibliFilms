@@ -1,7 +1,10 @@
 <template>
   <h2>All Films</h2>
     <div class="releases">
-        <AtomsFilmComponent v-for="film in allFilms" :key="film.id" :Film="film"/>
+        <AtomsFilmComponent 
+        v-for="film in allFilms" 
+        :key="film.id" 
+        :Film="film"/>
     </div>
 </template>
 

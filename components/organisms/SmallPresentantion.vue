@@ -2,8 +2,7 @@
     <div class="presentation">
         <p><b> {{ text }} </b></p>
         <img :src="img_path" alt="presentation" class="img-presentation" /> 
-        <!-- require(`${img_path}`) -->
-        <button @click="showImgPath">Ver caminho da imagem</button>
+        <!-- <button @click="showImgPath">Ver caminho da imagem</button> -->
     </div>
 </template>
 
@@ -29,8 +28,10 @@ const props = defineProps({
   grid-template-rows: repeat(2);
   grid-gap: 1rem;
   align-items: center;
+  justify-items: center;
   .img-presentation{
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 </style>

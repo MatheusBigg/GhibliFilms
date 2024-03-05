@@ -7,7 +7,7 @@
   
 <script setup lang="ts">
   const {data: allCharacters, error } = await useFetch<Person[]>("https://ghibliapi.vercel.app/people/")
-  console.log(toRaw(allCharacters.value)); //toRaw because there is a proxy in it
+  //console.log(toRaw(allCharacters.value)); //toRaw because there is a proxy in it
 
   if (error.value) {
     console.error('Error fetching data:', error.value);
@@ -35,7 +35,7 @@
 
   const showCharacters = () => {
     //console.log("All characters:", toRaw(rawCharacters.value));
-    console.log("Sorted:", sortedCharacters);
+    //console.log("Sorted:", sortedCharacters);
   }
 
 </script>
@@ -58,7 +58,9 @@
 @media (max-width: 768px) {
   .characters {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    grid-gap: 3rem;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;
   }
 }
 </style>

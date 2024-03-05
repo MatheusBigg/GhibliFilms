@@ -1,15 +1,12 @@
 <template>
-  <NuxtLink :to="`/characters/${Chara.id}`" >
+  <NuxtLink :to="`/charactersIndividual/${Chara.id}`" >
     <div class="character-wrapper">
       <h4>{{ Chara.name }}</h4>
       <div class="character-item-wrapper">
-        <!-- <div class="character-item"></div> -->
         <img :src="Chara.image_path" :alt="Chara.name" class="character-item"/>
         <div class="character-details">
           <div>{{ Chara.gender }}</div>
           <div>{{ Chara.age }}</div>
-          <!-- <br> -->
-          <!-- <div><i>{{ Chara.species }}</i></div> -->
         </div>
       </div>
     </div>

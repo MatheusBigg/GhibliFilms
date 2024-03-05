@@ -11,10 +11,12 @@
 </template>
 
 <style lang="scss" scoped>
+
 .film-layout {
   margin-top: 3rem;
   display: grid;
   grid-gap: 2rem;
+  background: linear-gradient(to bottom, white 0%, rgb(0, 255, 255) 50%, white 100%); /* Updated gradient definition */
   .container {
     padding-bottom: 2rem;
   }

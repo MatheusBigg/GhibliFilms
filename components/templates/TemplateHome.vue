@@ -14,7 +14,7 @@
 /* Styles for narrower screens (e.g., mobile) */
 @media (max-width: 768px) {
   .home-template {
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 }
 </style>

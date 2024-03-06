@@ -54,7 +54,7 @@
   .articles-grid {
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .criadores-grid {
     display: grid;
@@ -72,7 +72,21 @@
 /* Styles for narrower screens (e.g., mobile) */
 @media (max-width: 768px) {
   .about-template {
-    grid-gap: 1rem;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+    grid-gap: 3rem;
+    .articles-grid {
+      grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+      grid-gap: 2rem;
+      padding-left: 2rem;
+    }
+    .criadores-grid {
+      width: 80%;
+      height: 80%;
+      grid-template-columns: repeat( auto-fit, minmax(80px, 3fr));
+      grid-gap: 1rem;
+      margin-left: 2rem;
+      font-size: 0.7rem;
+    }
   }
 }
 </style>

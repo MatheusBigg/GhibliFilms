@@ -9,3 +9,5 @@ This is a practice repository to learn about Vue and Nuxt3 while listing the fil
 - Structure Practice
 - Data Fetching API
 
+## To Do:
+- Expand Home Page with new Sections (Commercials, Series, Games, etc)
